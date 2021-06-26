@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="wrapper">
+        <div id=title_box>
+            <p>The current time and date:</p>
+        </div>
+        <div id=date_time>
+            <h1>GMT</h1>
+            <h2>{{time}}</h2>
+            <h1>Local</h1>
+            <h2>{{local}}</h2>
+        </div>
+        <div id="freeclock">
+            <iframe src="https://free.timeanddate.com/clock/i7v4okqg/n77/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="88" height="36"></iframe>
+        </div>
+    </div>
+</body>
+</html>
